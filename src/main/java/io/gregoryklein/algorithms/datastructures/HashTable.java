@@ -4,12 +4,14 @@ package io.gregoryklein.algorithms.datastructures;
  * @author Gregory.KLEIN
  *
  */
+@SuppressWarnings("unchecked")
 public class HashTable<T> {
 	
 	private int initialSize;
 	private HashEntry<T>[] data;
 	private int size;
 	
+	@SuppressWarnings("hiding")
 	public class HashEntry<T> {
 		String key;
 		T value;
@@ -36,7 +38,7 @@ public class HashTable<T> {
 		if(data[index] == null) {
 			data[index] = entry;
 		} else {
-			HashEntry entries = data[index];
+			HashEntry<T> entries = data[index];
 			
 			while(entries.next != null) {
 				entries = entries.next;
