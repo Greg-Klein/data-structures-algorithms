@@ -1,11 +1,10 @@
 package io.gregoryklein.algorithms.algo;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 import org.junit.Before;
 import org.junit.Test;
-
-import junit.framework.Assert;
 
 public class FibonacciTest {
 	
