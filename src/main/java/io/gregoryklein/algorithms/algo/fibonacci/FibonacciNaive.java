@@ -1,15 +1,14 @@
-package io.gregoryklein.algorithms.algo;
+package io.gregoryklein.algorithms.algo.fibonacci;
 
 public class FibonacciNaive {
 	
 	public int fib(int n) {
-		if(n <= 0) {
+		if(n <= 0)
 			return 0;
-		} else if (n == 1) {
+		else if (n == 1)
 			return 1;
-		} else {
+		else
 			return fib(n - 1) + fib(n - 2);
-		}
 	}
 
 }
